@@ -21,4 +21,4 @@ Route::get('/', function () {
     // passare alla vista home
     
      return view('home', compact('comics'));
-});
+})->name('home');

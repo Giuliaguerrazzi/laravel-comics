@@ -125,3 +125,10 @@ pb-6 {
   background-size: cover;
   background-position: center;
 }
+
+.comics-list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
