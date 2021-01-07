@@ -13,12 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+// Route::get('/', function () {
 
-    // prendere i dati dal file php
-    $comics = config('comics');
+//     // prendere i dati dal file php
+//     $comics = config('comics');
 
-    // passare alla vista home
+//     // passare alla vista home
     
-     return view('home', compact('comics'));
-})->name('home');
+//      return view('home', compact('comics'));
+// })->name('home');
+
+Route::get('/', 'HomeController@index')->name('home');
+
+
+Route::get('/comic/{id}', 'ComicController@show')->name('comic-detail');
