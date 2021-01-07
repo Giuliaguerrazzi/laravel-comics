@@ -14,5 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    // prendere i dati dal file php
+    $comics = config('comics');
+
+    // passare alla vista home
+    
+     return view('home', compact('comics'));
 });

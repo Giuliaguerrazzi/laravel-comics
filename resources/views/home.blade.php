@@ -1,5 +1,30 @@
 @extends('layouts/main')
 
 @section('content')
-    <main>hello</main>
+    <main class='wrap-home'>
+    
+    <section class='general-hero'>
+        <div class='container'>
+            <img src="{{ asset('images/cover-home.jpg') }}" alt="">
+        </div>
+    </section>
+
+    <section class='comics'>
+        <div class='container'> 
+            <ul class='comics-list'>
+                @foreach ($comics as $comic)
+                <li>
+                    <a href="">
+                        <img src="{{ $comic['image'] }}" alt="">
+                        <h3>{{ $comic['title'] }}</h3>
+                    </a>
+                </li>
+
+                @endforeach
+            </ul>
+        </div>
+    
+    </section>
+
+    </main>
 @endsection
