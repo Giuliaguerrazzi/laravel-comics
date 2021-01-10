@@ -1,3 +1,7 @@
+$color-theme: #0282f9;
+$backgroud-comic: #1c1c1c;
+$footer-text: #959595;
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
@@ -29,4 +33,20 @@
 
 .align-center {
     align-items: center;
+}
+
+.content-center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.flex-end {
+    justify-content: flex-end;
+} 
+
+.space-around {
+    justify-content: space-around;
 }

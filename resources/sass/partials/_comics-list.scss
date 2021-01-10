@@ -1,6 +1,138 @@
-.comics-list {
-    padding: 0;
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+.row {
+    background: $color-theme;
+    color: #fff;
+}
+
+.comics {
+    background: $backgroud-comic;
+
+    .comics-list {
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        margin: 0;
+        
+        a {
+            color: #fff;
+        }
+
+        h3 {
+            width: 80%;
+        }
+    }
+
+    .btn {
+        padding: 10px 40px;
+        background: $color-theme;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+}
+
+.icon {
+    background: $color-theme;
+    height: 135px;
+    color: #fff;
+
+    ul {
+        margin: 0;
+
+        li {
+
+            flex-basis: calc(100% / 5 );
+    
+            img {
+                height: 30%;
+            }
+    
+            p {
+                margin-left: 10px;
+            }
+        }   
+    }
+       
+}
+
+.white-row {
+    height: 80px;
+}
+
+.comics-card {
+    background: #fff;
+
+    .text-comic {
+        margin-right: 15px;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    .detail {
+        background-color: #55ba59;
+        border-bottom: 1px solid #357739;
+        height: 50px;
+        color: white;
+        .price{
+            flex-basis: 75%;
+            border-right: 1px solid #357739;
+            padding: 0 15px;
+        }
+        .check {
+            padding: 0 15px;
+            i{
+                margin-left: 15px;
+            }
+        }
+    }
+    
+    .adv {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.detail-comic {
+     background: #f6f6f6;
+     border-bottom: 1px solid #e6e6e6;
+        h4 {
+            color: #003f5e; 
+            font-size: 1.4rem;
+            text-transform: capitalize;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+    .detail-column{
+        flex-basis: 40%;
+        }
+    .detail-info{
+        border-bottom: 1px solid #e6e6e6;
+        padding: 10px 10px 10px 0;
+    }    
+}
+
+.icon-comic {
+    background: #f6f6f6;
+
+    ul {
+        margin: 0;
+    }
+    li {
+        padding: 20px;
+        border-left: 1px solid  #e6e6e6;
+        color: #9f9f9f;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px;
+        &:last-of-type {
+            border-right: 1px solid  #e6e6e6;
+        }
+    }
+    p {
+        display: inline-block;
+        margin-right: 15px;
+    }
 }

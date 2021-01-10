@@ -5,6 +5,14 @@ body {
   font-size: 16px;
 }
 
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
@@ -119,16 +127,202 @@ pb-6 {
   align-items: center;
 }
 
+.content-center {
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+.navbar-top {
+  height: 20px;
+  background: #0282f9;
+}
+.navbar-top .top-list {
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+}
+.navbar-top .top-list li {
+  padding: 0 15px;
+}
+
+.navbar-nav ul {
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.navbar-nav ul li {
+  padding: 0 10px;
+}
+.navbar-nav ul li a {
+  color: #000;
+}
+.navbar-nav ul input {
+  border: none;
+  border-bottom: 2px solid #0282f9;
+  width: 100px;
+}
+
 .general-hero {
   height: 390px;
   background-image: url("../images/bg-hero-home.jpg");
   background-size: cover;
   background-position: center;
 }
+.general-hero .container img {
+  position: absolute;
+  bottom: -87px;
+}
 
-.comics-list {
+.row {
+  background: #0282f9;
+  color: #fff;
+}
+
+.comics {
+  background: #1c1c1c;
+}
+.comics .comics-list {
   padding: 0;
   list-style: none;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0;
+}
+.comics .comics-list a {
+  color: #fff;
+}
+.comics .comics-list h3 {
+  width: 80%;
+}
+.comics .btn {
+  padding: 10px 40px;
+  background: #0282f9;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.icon {
+  background: #0282f9;
+  height: 135px;
+  color: #fff;
+}
+.icon ul {
+  margin: 0;
+}
+.icon ul li {
+  flex-basis: calc(100% / 5 );
+}
+.icon ul li img {
+  height: 30%;
+}
+.icon ul li p {
+  margin-left: 10px;
+}
+
+.white-row {
+  height: 80px;
+}
+
+.comics-card {
+  background: #fff;
+}
+.comics-card .text-comic {
+  margin-right: 15px;
+}
+.comics-card h1 {
+  text-transform: uppercase;
+}
+.comics-card .detail {
+  background-color: #55ba59;
+  border-bottom: 1px solid #357739;
+  height: 50px;
+  color: white;
+}
+.comics-card .detail .price {
+  flex-basis: 75%;
+  border-right: 1px solid #357739;
+  padding: 0 15px;
+}
+.comics-card .detail .check {
+  padding: 0 15px;
+}
+.comics-card .detail .check i {
+  margin-left: 15px;
+}
+.comics-card .adv img {
+  width: 100%;
+}
+
+.detail-comic {
+  background: #f6f6f6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.detail-comic h4 {
+  color: #003f5e;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.detail-comic .detail-column {
+  flex-basis: 40%;
+}
+.detail-comic .detail-info {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 10px 10px 0;
+}
+
+.icon-comic {
+  background: #f6f6f6;
+}
+.icon-comic ul {
+  margin: 0;
+}
+.icon-comic li {
+  padding: 20px;
+  border-left: 1px solid #e6e6e6;
+  color: #9f9f9f;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.icon-comic li:last-of-type {
+  border-right: 1px solid #e6e6e6;
+}
+.icon-comic p {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+footer {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+  height: 385px;
+}
+footer .footer-main {
+  position: relative;
+}
+footer .footer-main .list h3 {
+  color: #fff;
+}
+footer .footer-main .list li {
+  color: #9f9f9f;
+  margin: 5px 0;
+}
+footer .footer-main img {
+  position: absolute;
+  right: 70px;
+  top: -90px;
+  overflow: auto;
 }

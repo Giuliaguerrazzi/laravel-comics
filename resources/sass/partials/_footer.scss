@@ -1,0 +1,29 @@
+footer {
+    background-image: url('../images/footer-bg.jpg');
+    background-size: cover;
+    height: 385px;
+
+    .footer-main {
+        position: relative;
+
+        .list {
+            h3 {
+                color: #fff;
+            }
+    
+            li {
+                color: #9f9f9f;
+                margin: 5px 0;
+            }
+        }
+    
+        img {
+            position: absolute;
+            right: 70px;
+            top: -90px;
+            overflow: auto;
+        }
+    }
+
+    
+}

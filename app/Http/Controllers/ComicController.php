@@ -16,22 +16,22 @@ class ComicController extends Controller
 
         $comic = [];
         foreach ($comics as $item) {
-            // if ($id == $item['id']) {
-            //     $comic = $item;
-            // }
+            
+            // conversione dall'item a titolo
             $titleConverted = Str::slug($item['title'], '-');
 
             if($slug == $titleConverted) {
-                $comic == $item;
+                $comic = $item;
                 break;
             }
         }
 
         if (empty($comic)){
-            abort(404);
+             abort(404);
         }
 
-        
+        //dd($comic);
         return view('comics.show', compact('comic'));
+
     } 
 }

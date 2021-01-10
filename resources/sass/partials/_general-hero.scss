@@ -3,4 +3,9 @@
     background-image: url('../images/bg-hero-home.jpg');
     background-size: cover;
     background-position: center;
+
+    .container img {
+        position: absolute;
+        bottom: -87px;
+    }
 }

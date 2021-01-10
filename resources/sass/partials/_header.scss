@@ -1,0 +1,33 @@
+.navbar-top {
+    height: 20px;
+    background: $color-theme;
+
+    .top-list {
+        display: flex;
+        justify-content: flex-end;
+        color: #fff;
+
+        li {
+            padding: 0 15px;
+        }
+    }
+}
+
+.navbar-nav ul {
+    justify-content: space-between;
+    text-transform: uppercase;
+    
+    li {
+        padding: 0 10px;
+
+        a {
+            color: #000;
+        }
+    }
+
+    input {
+        border: none;
+        border-bottom: 2px solid $color-theme;
+        width: 100px;
+       }
+}
